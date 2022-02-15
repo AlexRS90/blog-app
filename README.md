@@ -7,10 +7,10 @@
 
 ## Milestone 1:
 
-✅ Created a new rails app.
-✅ Followed gitflow
-✅ Setup PostgreSQL database.
-✅ For each URL I created:
+✅ Created a new rails app. <br>
+✅ Followed gitflow <br>
+✅ Setup PostgreSQL database. <br>
+✅ For each URL I created: 
  - A route.
  - Action in the correct controller.
  - A view file.
