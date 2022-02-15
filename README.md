@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 ![](https://img.shields.io/badge/Ruby-red)
 
-# School Library
+# Blog App
 
-> Blog App
+> 
 
 ## Milestone 1:
 
