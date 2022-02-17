@@ -15,6 +15,16 @@
  - Action in the correct controller.
  - A view file.
 
+## Milestone 2:
+
+✅ Add RSpec as a gem to your project. <br>
+✅ Create a Request spec file for all your controllers. <br>
+✅ Make sure that for each action you check: <br>
+
+ - If the response status was correct.
+ - If a correct template was rendered.
+ - If the response body includes correct placeholder text.
+
 ## Built With
 
 - Ruby On Rails
