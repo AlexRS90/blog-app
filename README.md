@@ -25,6 +25,12 @@
  - If a correct template was rendered.
  - If the response body includes correct placeholder text.
 
+## Milestone 3:
+
+✅ Wrote commands to create new models and their migrations. <br>
+✅ Wrote commands to generate schema.rb <br>
+✅ Added foreign keys with their indexes. <br>
+
 ## Built With
 
 - Ruby On Rails
