@@ -31,6 +31,12 @@
 ✅ Wrote commands to generate schema.rb <br>
 ✅ Added foreign keys with their indexes. <br>
 
+## Milestone 4:
+
+✅ Added some records to the database. ✍️ <br>
+✅ Wrote some methods to update the database counters. 🔢 <br>
+✅ Used seeds.rb and rails console. 🌱 <br>
+
 ## Built With
 
 - Ruby On Rails
