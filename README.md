@@ -46,6 +46,11 @@ To get a local copy up and running follow these simple example steps.
 Open your termnial and run the following command:
 
 <code>git clone https://github.com/AlexRS90/blog-app.git</code>
+ - cd blog-app
+ - bundle
+ - rails db:create
+ - rails db: migrate
+ - rails s
 
 ### Prerequisites
 
