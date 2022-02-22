@@ -31,6 +31,12 @@
 ✅ Wrote commands to generate schema.rb <br>
 ✅ Added foreign keys with their indexes. <br>
 
+## Milestone 4:
+
+✅ Added some records to the database. ✍️ <br>
+✅ Wrote some methods to update the database counters. 🔢 <br>
+✅ Used seeds.rb and rails console. 🌱 <br>
+
 ## Built With
 
 - Ruby On Rails
@@ -40,6 +46,11 @@ To get a local copy up and running follow these simple example steps.
 Open your termnial and run the following command:
 
 <code>git clone https://github.com/AlexRS90/blog-app.git</code>
+ - cd blog-app
+ - bundle
+ - rails db:create
+ - rails db: migrate
+ - rails s
 
 ### Prerequisites
 
