@@ -1,26 +1,13 @@
 <div class="d-flex profile-wrapper">
-  <div class="user-profile d-flex">
-    <div>
-      <%= image_tag(@user_id.photo, alt: 'User Image') %>
-    </div>
-    <div>
-      <%= @user_id.name %> <br>
-      Number of Posts: <%= @user_id.post_counter %>
-    </div>
-  </div>
+  <%= render 'shared/user_card', user_card: @users %>  
   <div class="user-bio">
     <h3>Bio</h3>
-    <%= @user_id.bio %>
+    <%= @users.bio %>
   </div>
-  <ul class="user-post d-flex">
-    <%= @post.each do |posts| %>
-      <li class="user-post-cards">
-        <h4>Post No: <%= posts.id %></h4>
-        <h3><%= posts.title %></h3>
-        <h4>Comments: <%= posts.comments_counter %> Likes: <%= posts.likes_counter %></h4>
-      </li>
-    <% end %>
-  </ul>
+  <%= render 'shared/post_card', post_card: @post %>  
+  <a href="/users/<%= @users.id %>/posts" class="master-button">
+    <h4>See all post</h4>
+  </a>
 </div>
 
 
