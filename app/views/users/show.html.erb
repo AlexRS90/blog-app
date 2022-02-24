@@ -1,2 +1,13 @@
-<h1>Here is the number of id for a specific the user: </h1>
-<h3><%= @user_id %></h3>
+<div class="d-flex profile-wrapper">
+  <%= render 'shared/user_card', user_card: @users %>  
+  <div class="user-bio">
+    <h3>Bio</h3>
+    <%= @users.bio %>
+  </div>
+  <%= render 'shared/post_card', post_card: @post %>  
+  <a href="/users/<%= @users.id %>/posts" class="master-button">
+    <h4>See all post</h4>
+  </a>
+</div>
+
+

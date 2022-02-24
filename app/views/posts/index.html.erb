@@ -1,2 +1,11 @@
-<h1>Post of the user number: </h1>
-<h3><%= @user_id %></h3>
+<div class="d-flex profile-wrapper">
+  <%= render 'shared/user_card', user_card: @users %>
+  <% if @post.empty? %>
+    <h3>No data yet</h3>
+  <% else %>
+    <% @post.each do |user_post| %>
+      <%= render 'shared/comment', user: @users, user_post: user_post %>
+    <% end %>
+  <% end %>
+</div>
+<a href="#">pagination</a>

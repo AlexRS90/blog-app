@@ -1,0 +1,18 @@
+<ul class="d-flex container">
+  <% Array(@users).each do |name| %>   
+    <li class="cards-layout d-flex">
+      <div class="photo d-flex">
+        <%= image_tag(name.photo, alt: 'User Image') %>
+      </div>
+      <div class="user-info d-flex">
+        Id: <%= name.id %> <br>
+        <% if request.fullpath == '/' || request.fullpath == '/users' %>
+          <a href="/users/<%= name.id %>">User: <%= name.name %></a> <br>
+        <% else %>
+          User: <%= name.name %> <br>
+        <% end %>
+        Number of post: <%= name.post_counter %>
+      </div>
+    </li>
+  <% end %>
+</ul>
