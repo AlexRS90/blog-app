@@ -37,6 +37,13 @@
 ✅ Wrote some methods to update the database counters. 🔢 <br>
 ✅ Used seeds.rb and rails console. 🌱 <br>
 
+## Milestone 5:
+
+✅  Implemented the design from the sneak peek wireframes. 🖥️  <br>
+✅  Added basic styling 🎨  <br>
+✅  Used methods from models. 📈  <br>
+✅  Used partials to keep the code DRY 🏜️  <br>
+
 ## Built With
 
 - Ruby On Rails
