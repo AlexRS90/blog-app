@@ -1,15 +1,2 @@
 <h1>Welcome to the Blog Post</h1>
-<ul class="d-flex container">
-  <% @users.each do |name| %>
-    <li class="cards-layout d-flex">
-      <div class="photo d-flex">
-        <%= image_tag(name.photo, alt: 'User Image') %>
-      </div>
-      <div class="user-info d-flex">
-        Id: <%= name.id %> 
-        User: <%= name.name %> <br>
-        Number of post: <%= name.post_counter %>
-      </div>
-    </li>
-  <% end %>
-</ul>
+<%= render 'shared/user_card', user_card: @users %>
