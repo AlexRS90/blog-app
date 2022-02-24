@@ -43,13 +43,6 @@
   gap: 20px;
 }
 
-.user-profile {
-  flex-direction: row;
-  justify-content: space-between;
-  border: 2px solid teal;
-  padding: 2vh 1vh;
-}
-
 .user-bio {
   border: 2px solid teal;
   padding: 2vh 1vh;
@@ -64,5 +57,21 @@
 .user-post-cards {
   padding: 1vh;
   border: 2px solid teal;
+  list-style: none;
+}
+
+.full-post-title {
+  flex-direction: column;
+  border: 2px solid teal;
+  padding: 2vh 2vh;
+}
+
+.full-post-header {
+  gap: 20%;
+}
+
+.full-comments-wrapper {
+  border: 2px solid teal;
+  padding: 2vh 2vh;
   list-style: none;
 }
