@@ -1,0 +1,9 @@
+<h1>Add new comment</h1>
+<p>user id: <%= @user %> post id: <%= @post %></p>
+<%= form_with(model: @comment, url: "/users/#{@user}/posts/#{@post}/comments", scope: :data) do |f| %>
+  <div>
+    <%= f.label(:text, 'Add a Comment') %>
+    <%= f.text_area :text, size: '30x5' %>
+  </div>
+  <%= f.submit 'Save Comment' %>
+<% end %>

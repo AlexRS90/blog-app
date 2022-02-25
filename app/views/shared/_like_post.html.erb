@@ -1,0 +1,9 @@
+<div>
+  <% if post.likes.exists?(user_id: user.id) %>
+    <p> Post liked! </p>
+  <% else %>
+    <%= form_with url: "/users/#{user.id}/posts/#{post.id}/likes" do |f| %>
+      <%= f.submit "Like" %>
+    <% end %>
+  <% end %>
+</div>

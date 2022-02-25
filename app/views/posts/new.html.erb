@@ -1,0 +1,12 @@
+<h1>Welcome to the form</h1>
+
+<%= form_with(model: @post, url: "/users/#{@users.id}/posts", method: :post, local: true) do |f| %>
+  <div>
+    <h2>Post Details: </h2>
+    <%= f.label(:title, 'Post title') %>
+    <%= f.text_field :title %> <br><br>
+    <%= f.label(:text, 'Post content') %>
+    <%= f.text_area :text, size: '50x10'  %>
+  </div>
+  <%= f.submit 'Save Post' %>
+<% end %>
