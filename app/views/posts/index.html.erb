@@ -3,6 +3,7 @@
   <% if @post.empty? %>
     <h3>No data yet</h3>
   <% else %>
+    <%= link_to "New Post", new_user_post_path, class: 'new-post-btn' %>
     <% @post.each do |user_post| %>
       <%= render 'shared/comment', user: @users, user_post: user_post %>
     <% end %>
