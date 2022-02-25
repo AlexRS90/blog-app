@@ -44,6 +44,13 @@
 ✅  Used methods from models. 📈  <br>
 ✅  Used partials to keep the code DRY 🏜️  <br>
 
+Milestone 6:
+
+✅  Create forms to perform the following functions: <br>
+      ✔️  Creates a Post on behalf of the current_user. 📄 <br>
+      ✔️  Create a comment on behalf of the current_user. ✍️ <br>
+✅  Allow Users to add likes to Posts. 👍 
+
 ## Built With
 
 - Ruby On Rails
