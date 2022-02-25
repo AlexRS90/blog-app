@@ -55,7 +55,7 @@ Milestone 6:
 
 - Ruby On Rails
 
-To get a local copy up and running follow these simple example steps.
+## To get a local copy up and running follow these simple example steps.
 
 Open your termnial and run the following command:
 
@@ -64,7 +64,19 @@ Open your termnial and run the following command:
  - bundle
  - rails db:create
  - rails db: migrate
- - rails s
+
+### Now we need initial users in order to start working with the blog app, let's added, run the following commands:
+
+ - rails c
+<code>User.create!(name: 'Alex', photo: 'https://lh3.google.com/u/0/d/1Rf6vRehHE5NqXss9gvR8Xh2KCCKcZR3n=w1440-h789', bio: 'Full-Stack Web Developer')</code>
+<code>User.create(name: 'Tom', photo: 'https://media.istockphoto.com/photos/young-handsome-man-with-beard-wearing-casual-sweater-standing-over-picture-id1212702108?k=20&m=1212702108&s=612x612&w=0&h=ZI4gKJi2d1dfi74yTljf4YhulA1nfhD3dcUFGH-NUkY=', bio: 'Teacher from Mexico.')</code>
+<code>User.create(name: 'Lilly', photo: 'https://media.istockphoto.com/photos/cute-and-happy-teen-girl-with-braces-smiling-to-camera-picture-id1299140003?k=20&m=1299140003&s=612x612&w=0&h=c9d6mpWwHv1pgYg1vhSHlnA4GGUoS982oyrcdtHmrtI=', bio: 'Teacher from Poland.')</code>
+Now that we have users, you can start the server with the following comand:
+ - <code>rails s</code>
+Open your browser and type the following URL <code>http://127.0.0.1:3000/</code>
+
+Finally you can start using the app and add some post, comments and likes.
+Enjoy!
 
 ### Prerequisites
 
