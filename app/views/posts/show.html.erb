@@ -8,8 +8,13 @@
 <ul class="full-comments-wrapper">
   <% if @post.comments.empty?%>
     <h3>No comments yet</h3>
+    <%= link_to 'Write a new comment', "/users/#{@user.id}/posts/#{@post.id}/comments/new", class: 'new-comment-btn' %>
+    <%= render partial: "/shared/like_post", locals: { post: @post, user: @user } %>
   <% else %>
     <li>
+    <%= link_to 'Write a new comment', "/users/#{@user.id}/posts/#{@post.id}/comments/new", class: 'new-comment-btn' %>
+    <%= render partial: "/shared/like_post", locals: { post: @post, user: @user } %>
+    <h2>Comments:</h2>
     <% @post.comments.each do |comment| %>
       <h4><%= comment.user.name %>: <%= comment.text %></h4>
     <% end %>
