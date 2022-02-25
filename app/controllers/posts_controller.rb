@@ -12,11 +12,12 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @users = User.find_by(id: params[:user_id])
   end
 
   def create
-    @users = User.find_by(id: :user_id)
-    @post = Post.new(user_id: @users, title: params[:post][:title], text: params[:post][:text])
+    @users = User.find_by(id: params[:user_id])
+    @post = Post.new(user_id: @users.id, title: params[:post][:title], text: params[:post][:text])
     if @post.save
       flash[:success] = 'New post created successfully!'
       redirect_to users_path
