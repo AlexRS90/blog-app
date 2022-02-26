@@ -5,9 +5,9 @@ class LikesController < ApplicationController
     new_like = Like.create(user_id: user.id, post_id: post.id)
 
     if new_like.save
-      flash[:notice] = 'Liked'
+      flash[:success] = 'Liked'
     else
-      flash[:alert] = 'Not liked!'
+      flash[:error] = 'Not liked!'
     end
     redirect_to "/users/#{user.id}/posts/#{post.id}"
   end
