@@ -13,7 +13,7 @@ gem 'sprockets-rails'
 gem 'pg', '~> 1.1'
 
 # Use bullet to solve n+1 issue
-gem "bullet"
+gem 'bullet'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
