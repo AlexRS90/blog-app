@@ -51,6 +51,21 @@ Milestone 6:
       ✔️  Create a comment on behalf of the current_user. ✍️ <br>
 ✅  Allow Users to add likes to Posts. 👍 
 
+## Milestone 6:
+
+✅ Added the following validations:<br>
+   ✔️ For the User model:<br>
+     ☑️ Name must not be blank.<br>
+     ☑️ PostsCounter must be an integer greater than or equal to zero.<br>
+   ✔️ For the Post model:<br>
+     ☑️ Title must not be blank.<br>
+     ☑️ Title must not exceed 250 characters.<br>
+     ☑️ CommentsCounter must be an integer greater than or equal to zero.<br>
+     ☑️ LikesCounter must be an integer greater than or equal to zero.<br>
+✅ Added unit specs for all of your models' methods and validations.<br>
+✅ Added flash messages in the create actions in all your controllers.<br>
+✅ Solved issue N+1 using Bullet gem<br>
+
 ## Built With
 
 - Ruby On Rails
