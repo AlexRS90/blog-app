@@ -1,4 +1,9 @@
 class Post < ApplicationRecord
+  validates :title, presence:  { message: 'We need a title to display your post =D' },
+                    length: { maximum: 250, minimum: 5, message: 'Your title must be between 5 and 250 letters =D' }
+  validates :comments_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0, message: 'Empty data is not valid.' }
+  validates :likes_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0, message: 'Empty data is not valid.' }
+
   belongs_to :user
   has_many :likes, dependent: :destroy
   has_many :comments, dependent: :destroy

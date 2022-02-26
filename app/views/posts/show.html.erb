@@ -11,6 +11,7 @@
     <%= link_to 'Write a new comment', "/users/#{@user.id}/posts/#{@post.id}/comments/new", class: 'new-comment-btn' %>
     <%= render partial: "/shared/like_post", locals: { post: @post, user: @user } %>
   <% else %>
+    <%= render 'shared/flash_message' %>
     <li>
     <%= link_to 'Write a new comment', "/users/#{@user.id}/posts/#{@post.id}/comments/new", class: 'new-comment-btn' %>
     <%= render partial: "/shared/like_post", locals: { post: @post, user: @user } %>

@@ -1,4 +1,6 @@
 class Comment < ApplicationRecord
+  validates :text, presence: { message: "Do you like empty comments? Let's write something nice! =D" }
+
   belongs_to :user
   belongs_to :post
 

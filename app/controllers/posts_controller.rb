@@ -17,13 +17,13 @@ class PostsController < ApplicationController
 
   def create
     @users = User.find_by(id: params[:user_id])
-    @post = Post.new(user_id: @users.id, title: params[:post][:title], text: params[:post][:text])
+    @post = Post.new(user_id: @users.id, title: params[:post][:title], text: params[:post][:text], comments_counter: 0, likes_counter: 0)
     if @post.save
       flash[:success] = 'New post created successfully!'
-      redirect_to users_path
+      redirect_to "/users/#{@users.id}/posts"
     else
-      flash.now[:error] = 'Error: Data was not saved!'
-      render :new
+      flash[:error] = @post.errors.full_messages[0]
+      redirect_to "/users/#{@users.id}/posts/new"
     end
   end
 
