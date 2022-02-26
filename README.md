@@ -51,6 +51,21 @@ Milestone 6:
       ✔️  Create a comment on behalf of the current_user. ✍️ <br>
 ✅  Allow Users to add likes to Posts. 👍 
 
+## Milestone 6:
+
+✅ Added the following validations:<br>
+   ✔️ For the User model:<br>
+     ☑️ Name must not be blank.<br>
+     ☑️ PostsCounter must be an integer greater than or equal to zero.<br>
+   ✔️ For the Post model:<br>
+     ☑️ Title must not be blank.<br>
+     ☑️ Title must not exceed 250 characters.<br>
+     ☑️ CommentsCounter must be an integer greater than or equal to zero.<br>
+     ☑️ LikesCounter must be an integer greater than or equal to zero.<br>
+✅ Added unit specs for all of your models' methods and validations.<br>
+✅ Added flash messages in the create actions in all your controllers.<br>
+✅ Solved issue N+1 using Bullet gem<br>
+
 ## Built With
 
 - Ruby On Rails
@@ -68,9 +83,9 @@ Open your termnial and run the following command:
 ### Now we need initial users in order to start working with the blog app, let's added, run the following commands:
 
  - rails c
- - <code>User.create!(name: 'Alex', photo: 'https://lh3.google.com/u/0/d/1Rf6vRehHE5NqXss9gvR8Xh2KCCKcZR3n=w1440-h789', bio: 'Full-Stack Web Developer')</code> <br>
- - <code>User.create(name: 'Tom', photo: 'https://media.istockphoto.com/photos/young-handsome-man-with-beard-wearing-casual-sweater-standing-over-picture-id1212702108?k=20&m=1212702108&s=612x612&w=0&h=ZI4gKJi2d1dfi74yTljf4YhulA1nfhD3dcUFGH-NUkY=', bio: 'Teacher from Mexico.')</code> <br>
- - <code>User.create(name: 'Lilly', photo: 'https://media.istockphoto.com/photos/cute-and-happy-teen-girl-with-braces-smiling-to-camera-picture-id1299140003?k=20&m=1299140003&s=612x612&w=0&h=c9d6mpWwHv1pgYg1vhSHlnA4GGUoS982oyrcdtHmrtI=', bio: 'Teacher from Poland.')</code> <br>
+ - <code>User.create!(name: 'Alex', photo: 'https://lh3.google.com/u/0/d/1Rf6vRehHE5NqXss9gvR8Xh2KCCKcZR3n=w1440-h789', bio: 'Full-Stack Web Developer', post_counter: 0)</code> <br>
+ - <code>User.create(name: 'Tom', photo: 'https://media.istockphoto.com/photos/young-handsome-man-with-beard-wearing-casual-sweater-standing-over-picture-id1212702108?k=20&m=1212702108&s=612x612&w=0&h=ZI4gKJi2d1dfi74yTljf4YhulA1nfhD3dcUFGH-NUkY=', bio: 'Teacher from Mexico.', post_counter: 0)</code> <br>
+ - <code>User.create(name: 'Lilly', photo: 'https://media.istockphoto.com/photos/cute-and-happy-teen-girl-with-braces-smiling-to-camera-picture-id1299140003?k=20&m=1299140003&s=612x612&w=0&h=c9d6mpWwHv1pgYg1vhSHlnA4GGUoS982oyrcdtHmrtI=', bio: 'Teacher from Poland.', post_counter: 0)</code> <br>
 Now that we have users, you can start the server with the following comand:
  - <code>rails s</code> <br>
 Open your browser and type the following URL <code>http://127.0.0.1:3000/</code>

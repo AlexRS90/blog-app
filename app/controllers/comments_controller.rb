@@ -10,11 +10,11 @@ class CommentsController < ApplicationController
     post = Post.find(params[:post_id])
     @new_comment = Comment.create(user_id: users.id, post_id: post.id, text: comment_params[:text])
     if @new_comment.save
-      flash[:success] = 'New post created successfully!'
+      flash[:success] = 'New comment created successfully! =D'
       redirect_to "/users/#{users.id}/posts/#{post.id}"
     else
-      flash.now[:error] = 'Error: Comment was not saved!'
-      render :new
+      flash[:error] = @new_comment.errors.full_messages[0]
+      redirect_to "/users/#{users.id}/posts/#{post.id}/comments/new"
     end
   end
 

@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+  validates :name, presence: { message: "Your name can't be empty." }
+  validates :post_counter, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+
   has_many :posts, dependent: :destroy
   has_many :likes, dependent: :destroy
   has_many :comments, dependent: :destroy
