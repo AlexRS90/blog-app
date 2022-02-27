@@ -21,21 +21,49 @@
   border: 2px solid aqua;
   flex-direction: column;
   gap: 20px;
-  padding-left: 0;
+  padding: 2rem 0 2rem 0;
+  align-items: center;
 }
 
 .cards-layout {
   flex-direction: row;
-  justify-content: space-between;
+  gap: 20px;
+  border: 2px solid greenyellow;
+  width: 75%;
 }
 
 .photo {
   border: 2px solid teal;
+  object-fit: cover;
+  width: 30%;
+  border-radius: 10%;
 }
 
 .user-info {
-  border: 2px solid rosybrown;
-  width: 75%;
+  width: 60%;
+  flex-direction: column;
+}
+
+.user-info h3 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.user-info h4 {
+  margin: 0;
+}
+
+.profile-btn {
+  padding: 1rem;
+  text-decoration: none;
+  background-color: rosybrown;
+  color: aliceblue;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 10% 30% 50% 70%;
+  align-self: flex-end;
+  padding-bottom: 20px;
+  margin: 0 1rem 1rem 0;
 }
 
 .profile-wrapper {
