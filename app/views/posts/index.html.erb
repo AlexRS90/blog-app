@@ -1,5 +1,5 @@
+<%= render 'shared/user_card', user_card: @users %>
 <div class="d-flex profile-wrapper">
-  <%= render 'shared/user_card', user_card: @users %>
   <% if @post.empty? %>
     <h3>No data yet</h3>
     <%= link_to "New Post", new_user_post_path, class: 'new-post-btn' %>
@@ -10,5 +10,5 @@
       <%= render 'shared/comment', user: @users, user_post: user_post %>
     <% end %>
   <% end %>
+  <a href="#">pagination</a>
 </div>
-<a href="#">pagination</a>

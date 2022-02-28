@@ -13,29 +13,52 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Fresca&family=Poppins:ital,wght@1,100;1,400&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fresca', sans-serif;
+}
+
+.header {
+  text-align: center;
+  color: aliceblue;
+  margin: 0;
+  padding: 2rem;
+  border: 3px solid yellowgreen;
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
+}
+
 .d-flex {
   display: flex;
 }
 
 .container {
-  border: 2px solid aqua;
-  flex-direction: column;
-  gap: 20px;
   padding: 2rem 0 2rem 0;
-  align-items: center;
+  justify-content: space-around;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+  margin: 0;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+
 }
 
 .cards-layout {
   flex-direction: row;
   gap: 20px;
   border: 2px solid greenyellow;
-  width: 75%;
+  border-radius: 3rem;
+  width: 35%;
+  padding: 2.5rem;
+  background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
 }
 
 .photo {
   border: 2px solid teal;
   object-fit: cover;
-  width: 30%;
+  width: 40%;
   border-radius: 10%;
 }
 
@@ -55,37 +78,50 @@
 
 .profile-btn {
   padding: 1rem;
+  text-align: center;
   text-decoration: none;
-  background-color: rosybrown;
   color: aliceblue;
   height: 10px;
-  border: 1px solid black;
-  border-radius: 10% 30% 50% 70%;
+  border-radius: 3rem;
   align-self: flex-end;
-  padding-bottom: 20px;
-  margin: 0 1rem 1rem 0;
+  background-image: radial-gradient(#0acffe 20%, #495aff 100%);
 }
 
 .profile-wrapper {
   flex-direction: column;
   gap: 20px;
+  padding: 3rem;
+  background-image: linear-gradient(-20deg, #616161 0%, #9bc5c3 100%);
 }
 
 .user-bio {
   border: 2px solid teal;
   padding: 2vh 1vh;
+  background-image: radial-gradient(#5D9FFF 0, #6BBBFF 100%);
+  border-radius: 2rem;
+  padding: 2rem;
 }
 
 .user-post {
   padding-left: 0;
   gap: 20px;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .user-post-cards {
   padding: 1vh;
   border: 2px solid teal;
+  width: 40%;
+  text-align: center;
+  border-radius: 2rem;
+  background-image: radial-gradient(#5D9FFF 0, #6BBBFF 100%);
   list-style: none;
+}
+
+.user-post-cards h4 {
+  text-align: right;
+  padding-right: 2rem;
 }
 
 .full-post-title {
