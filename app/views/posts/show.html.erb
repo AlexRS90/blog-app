@@ -1,19 +1,19 @@
 <div class="d-flex full-post-title">
   <div class="d-flex full-post-header">
     <h2><%= @post.title %><br>by <%= @user.name %></h2>
-    <h4>Comments: <%= @post.comments_counter %> Likes: <%= @post.likes_counter %></h4>
+    <h3>Comments: <%= @post.comments_counter %> Likes: <%= @post.likes_counter %></h3>
   </div>
   <div><h2><%= @post.text %></h2></div>
 </div>
 <ul class="full-comments-wrapper">
   <% if @post.comments.empty?%>
     <h3>No comments yet</h3>
-    <%= link_to 'Write a new comment', "/users/#{@user.id}/posts/#{@post.id}/comments/new", class: 'new-comment-btn' %>
+    <%= link_to 'Write a new comment', "/users/#{@user.id}/posts/#{@post.id}/comments/new", class: 'profile-btn' %>
     <%= render partial: "/shared/like_post", locals: { post: @post, user: @user } %>
   <% else %>
     <%= render 'shared/flash_message' %>
     <li>
-    <%= link_to 'Write a new comment', "/users/#{@user.id}/posts/#{@post.id}/comments/new", class: 'new-comment-btn' %>
+    <%= link_to 'Write a new comment', "/users/#{@user.id}/posts/#{@post.id}/comments/new", class: 'profile-btn' %>
     <%= render partial: "/shared/like_post", locals: { post: @post, user: @user } %>
     <h2>Comments:</h2>
     <% @post.comments.each do |comment| %>

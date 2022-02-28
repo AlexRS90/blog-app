@@ -104,6 +104,7 @@ Enjoy!
 
 - GitHub: [@AlexRS90](https://github.com/AlexRS90)
 - Twitter: [@AlejandroRBenji](https://twitter.com/AlejandroRBenji)
+- LinkedIn: [@AlexRS90](https://www.linkedin.com/in/alexrs90/)
 
 
 ## 🤝 Contributing
