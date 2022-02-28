@@ -119,6 +119,11 @@ body {
   list-style: none;
 }
 
+.links {
+  color: black;
+  text-decoration: none;
+}
+
 .user-post-cards h4 {
   text-align: right;
   padding-right: 2rem;
@@ -127,15 +132,22 @@ body {
 .full-post-title {
   flex-direction: column;
   border: 2px solid teal;
-  padding: 2vh 2vh;
+  border-radius: 3rem;
+  margin: 3rem;
+  padding: 2rem;
 }
 
 .full-post-header {
-  gap: 20%;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 2px solid rosybrown;
+  border-radius: 3rem;
 }
 
 .full-comments-wrapper {
   border: 2px solid teal;
-  padding: 2vh 2vh;
+  border-radius: 3rem;
+  padding: 2rem;
+  margin: 5rem;
   list-style: none;
 }

@@ -1,8 +1,8 @@
 <ul class="user-post d-flex">
-  <%= link_to "/users/#{@users.id}/posts/#{user_post.id}" do %>
-    <li class="user-post-cards">
+  <%= link_to "/users/#{@users.id}/posts/#{user_post.id}", class: 'user-post-cards links' do %>
+    <li>
       <h3>Post No: <%= user_post.id %></h3>
-      <a href="/users/<%= @users.id %>/posts/<%= user_post.id %>"><h3><%= user_post.title %></h3></a>
+      <h3><%= user_post.title %></h3>
       <h4>Comments: <%= user_post.comments_counter %> Likes: <%= user_post.likes_counter %></h4>
     </li>
   <% end %>
