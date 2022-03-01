@@ -12,7 +12,7 @@ gem 'sprockets-rails'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
-#Use for authenticate users
+# Use for authenticate users
 gem 'devise'
 
 # Use bullet to solve n+1 issue

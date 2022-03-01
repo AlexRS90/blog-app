@@ -66,6 +66,17 @@ Milestone 6:
 ✅ Added flash messages in the create actions in all your controllers.<br>
 ✅ Solved issue N+1 using Bullet gem<br>
 
+## Milestone 7:
+
+✅  Added some styling to improve the UI 🎨 
+✅  Installed devise gem 💎 
+✅  User is able to:
+✅  Can register a new user. 🧑‍💻 
+✅  User logs in with a combination of email and password. 🔑  📫 
+✅  Hashed passwords should be stored in the database. 🗝️ 
+✅  Ask for confirmation of email. 📩 
+✅  Can reset password. 🔑  ▶️ 🗝️ 
+
 ## Built With
 
 - Ruby On Rails
