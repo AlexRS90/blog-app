@@ -66,6 +66,17 @@ Milestone 6:
 ✅ Added flash messages in the create actions in all your controllers.<br>
 ✅ Solved issue N+1 using Bullet gem<br>
 
+## Milestone 7:
+
+✅  Added some styling to improve the UI 🎨 
+✅  Installed devise gem 💎 
+✅  User is able to:
+✅  Can register a new user. 🧑‍💻 
+✅  User logs in with a combination of email and password. 🔑  📫 
+✅  Hashed passwords should be stored in the database. 🗝️ 
+✅  Ask for confirmation of email. 📩 
+✅  Can reset password. 🔑  ▶️ 🗝️ 
+
 ## Built With
 
 - Ruby On Rails
@@ -79,19 +90,18 @@ Open your termnial and run the following command:
  - bundle
  - rails db:create
  - rails db: migrate
-
-### Now we need initial users in order to start working with the blog app, let's added, run the following commands:
-
- - rails c
- - <code>User.create!(name: 'Alex', photo: 'https://lh3.google.com/u/0/d/1Rf6vRehHE5NqXss9gvR8Xh2KCCKcZR3n=w1440-h789', bio: 'Full-Stack Web Developer', post_counter: 0)</code> <br>
- - <code>User.create(name: 'Tom', photo: 'https://media.istockphoto.com/photos/young-handsome-man-with-beard-wearing-casual-sweater-standing-over-picture-id1212702108?k=20&m=1212702108&s=612x612&w=0&h=ZI4gKJi2d1dfi74yTljf4YhulA1nfhD3dcUFGH-NUkY=', bio: 'Teacher from Mexico.', post_counter: 0)</code> <br>
- - <code>User.create(name: 'Lilly', photo: 'https://media.istockphoto.com/photos/cute-and-happy-teen-girl-with-braces-smiling-to-camera-picture-id1299140003?k=20&m=1299140003&s=612x612&w=0&h=c9d6mpWwHv1pgYg1vhSHlnA4GGUoS982oyrcdtHmrtI=', bio: 'Teacher from Poland.', post_counter: 0)</code> <br>
-Now that we have users, you can start the server with the following comand:
  - <code>rails s</code> <br>
-Open your browser and type the following URL <code>http://127.0.0.1:3000/</code>
+
+ Open your browser and type the following URL <code>http://127.0.0.1:3000/</code>
 
 Finally you can start using the app and add some post, comments and likes.
 Enjoy!
+
+### Here are some data to add to the database from the rails console, in case you need them:
+
+ - <code>User.create!(name: 'Alex', photo: 'https://lh3.google.com/u/0/d/1Rf6vRehHE5NqXss9gvR8Xh2KCCKcZR3n=w1440-h789', bio: 'Full-Stack Web Developer', post_counter: 0)</code> <br>
+ - <code>User.create(name: 'Tom', photo: 'https://media.istockphoto.com/photos/young-handsome-man-with-beard-wearing-casual-sweater-standing-over-picture-id1212702108?k=20&m=1212702108&s=612x612&w=0&h=ZI4gKJi2d1dfi74yTljf4YhulA1nfhD3dcUFGH-NUkY=', bio: 'Teacher from Mexico.', post_counter: 0)</code> <br>
+ - <code>User.create(name: 'Lilly', photo: 'https://media.istockphoto.com/photos/cute-and-happy-teen-girl-with-braces-smiling-to-camera-picture-id1299140003?k=20&m=1299140003&s=612x612&w=0&h=c9d6mpWwHv1pgYg1vhSHlnA4GGUoS982oyrcdtHmrtI=', bio: 'Teacher from Poland.', post_counter: 0)</code> <br>
 
 ### Prerequisites
 
@@ -104,7 +114,13 @@ Enjoy!
 
 - GitHub: [@AlexRS90](https://github.com/AlexRS90)
 - Twitter: [@AlejandroRBenji](https://twitter.com/AlejandroRBenji)
+- LinkedIn: [@AlexRS90](https://www.linkedin.com/in/alexrs90/)
 
+
+👤 Mateo Villagómez<br>
+- GitHub: [@mateo951](https://github.com/mateo951)<br>
+- Twitter: [@MVGameDev](https://twitter.com/MVGameDev)<br>
+- LinkedIn: [@Mateo Villagómez](https://www.linkedin.com/in/mateo-villagómez/)<br>
 
 ## 🤝 Contributing
 

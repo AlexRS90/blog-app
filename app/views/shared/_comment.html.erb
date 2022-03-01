@@ -1,9 +1,11 @@
 <ul class="user-post d-flex">
-  <li class="user-post-cards">
-    <h4>Post No: <%= user_post.id %></h4>
-    <a href="/users/<%= @users.id %>/posts/<%= user_post.id %>"><h3><%= user_post.title %></h3></a>
-    <h4>Comments: <%= user_post.comments_counter %> Likes: <%= user_post.likes_counter %></h4>
-  </li>
+  <%= link_to "/users/#{@users.id}/posts/#{user_post.id}", class: 'user-post-cards links' do %>
+    <li>
+      <h3>Post No: <%= user_post.id %></h3>
+      <h3><%= user_post.title %></h3>
+      <h4>Comments: <%= user_post.comments_counter %> Likes: <%= user_post.likes_counter %></h4>
+    </li>
+  <% end %>
   <li class="user-post-cards">
     <h2>Comments:</h2>
     <% user_post.recent_comments.each do |opinion| %>
