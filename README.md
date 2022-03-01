@@ -118,6 +118,12 @@ Enjoy!
 - LinkedIn: [@AlexRS90](https://www.linkedin.com/in/alexrs90/)
 
 
+👤 Mateo Villagómez<br>
+- GitHub: [@mateo951](https://github.com/mateo951)<br>
+- Twitter: [@MVGameDev](https://twitter.com/MVGameDev)<br>
+- LinkedIn: [@Mateo Villagómez](https://www.linkedin.com/in/mateo-villagómez/)<br>
+
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
