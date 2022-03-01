@@ -10,6 +10,19 @@ Rails.application.configure do
     Bullet.rails_logger  = true
     Bullet.add_footer    = true
   end
+
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+  config.action_mailer.smtp_settings = {
+    user_name:     'mateovillagomez1995@gmail.com',
+    password:      'password',
+    domain:        '3000',
+    address:       'smtp.gmail.com',
+    port:          '587',
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded any time
