@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- @import url('https://fonts.googleapis.com/css2?family=Fresca&family=Poppins:ital,wght@1,100;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fresca&family=Poppins:ital,wght@1,100;1,400&display=swap');
 
 html,
 body {
@@ -43,7 +43,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-
 }
 
 .cards-layout {
@@ -70,7 +69,7 @@ body {
 
 .user-info h3 {
   margin-top: 1rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .user-info h4 {
@@ -97,8 +96,7 @@ body {
 
 .user-bio {
   border: 2px solid teal;
-  padding: 2vh 1vh;
-  background-image: radial-gradient(#5D9FFF 0, #6BBBFF 100%);
+  background-image: radial-gradient(#5d9fff 0, #6bbbff 100%);
   border-radius: 2rem;
   padding: 2rem;
 }
@@ -116,7 +114,7 @@ body {
   width: 40%;
   text-align: center;
   border-radius: 2rem;
-  background-image: radial-gradient(#5D9FFF 0, #6BBBFF 100%);
+  background-image: radial-gradient(#5d9fff 0, #6bbbff 100%);
   list-style: none;
 }
 
@@ -136,7 +134,7 @@ body {
   border-radius: 3rem;
   margin: 3rem;
   padding: 2rem;
-  background-image: radial-gradient(#5D9FFF 0, #6BBBFF 100%);
+  background-image: radial-gradient(#5d9fff 0, #6bbbff 100%);
 }
 
 .full-post-header {
@@ -154,5 +152,5 @@ body {
   padding: 2rem;
   margin: 5rem;
   list-style: none;
-  background-image: radial-gradient(#5D9FFF 0, #6BBBFF 100%);
+  background-image: radial-gradient(#5d9fff 0, #6bbbff 100%);
 }
