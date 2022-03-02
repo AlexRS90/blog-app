@@ -27,7 +27,7 @@ class PostsController < ApplicationController
       redirect_to "/users/#{@users.id}/posts/new"
     end
   end
-  
+
   def destroy
     @user = User.find(params[:user_id])
     @post = Post.find_by_id(params[:post_id])
