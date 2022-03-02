@@ -2,8 +2,7 @@ class PostsController < ApplicationController
   def index
     user_url = params[:user_id]
     @users = User.find_by(id: user_url)
-    @post = Post.where(user_id: user_url)
-    @post = @users.posts.includes(:comments)
+    @post = @users.posts
   end
 
   def show
@@ -28,6 +27,7 @@ class PostsController < ApplicationController
       redirect_to "/users/#{@users.id}/posts/new"
     end
   end
+  
 
   private
 

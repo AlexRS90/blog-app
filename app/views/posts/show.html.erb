@@ -18,6 +18,9 @@
     <h2>Comments:</h2>
     <% @post.comments.each do |comment| %>
       <h4><%= comment.user.name %>: <%= comment.text %></h4>
+      <% if can? :destroy, comment %>
+        <%= link_to 'Delete', destroy_comment_path(@user.id, @post.id, comment.id) %>
+      <% end %>
     <% end %>
     </li>
   <% end %>
