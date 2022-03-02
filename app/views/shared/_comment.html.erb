@@ -10,6 +10,9 @@
     <h2>Comments:</h2>
     <% user_post.recent_comments.each do |opinion| %>
       <h4><%= opinion.user.name %>: <%= opinion.text %></h4>
+      <% if can? :destroy, opinion %>
+        <%= link_to 'Delete', destroy_comment_path(@users.id, user_post.id, opinion.id) %>
+      <% end %>
     <% end %>
   </li>
 </ul>

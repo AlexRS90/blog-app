@@ -3,19 +3,19 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   config.after_initialize do
     Bullet.enable        = true
-    Bullet.alert         = true
+    Bullet.alert         = false
     Bullet.bullet_logger = true
-    Bullet.console       = true
+    Bullet.console       = false
   # Bullet.growl         = true
     Bullet.rails_logger  = true
-    Bullet.add_footer    = true
+    Bullet.add_footer    = false
   end
 
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
   config.action_mailer.smtp_settings = {
-    user_name:     'mateovillagomez1995@gmail.com',
+    user_name:     'alex@gmail.com',
     password:      'password',
     domain:        '3000',
     address:       'smtp.gmail.com',

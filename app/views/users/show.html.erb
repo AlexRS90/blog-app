@@ -4,7 +4,7 @@
     <h3>Bio</h3>
     <%= @users.bio %>
   </div>
-  <%= render 'shared/post_card', post_card: @post %>  
+  <%= render 'shared/post_card', post_card: @post, user: @users %>  
   <a href="/users/<%= @users.id %>/posts" class="profile-btn">
     <h4">See all post</h4>
   </a>

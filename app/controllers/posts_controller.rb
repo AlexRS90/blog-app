@@ -2,8 +2,7 @@ class PostsController < ApplicationController
   def index
     user_url = params[:user_id]
     @users = User.find_by(id: user_url)
-    @post = Post.where(user_id: user_url)
-    @post = @users.posts.includes(:comments)
+    @post = @users.posts
   end
 
   def show
@@ -27,6 +26,17 @@ class PostsController < ApplicationController
       flash[:error] = @post.errors.full_messages[0]
       redirect_to "/users/#{@users.id}/posts/new"
     end
+  end
+
+  def destroy
+    @user = User.find(params[:user_id])
+    @post = Post.find_by_id(params[:post_id])
+    if @post.destroy
+      flash[:success] = 'Post deleted successfully!'
+    else
+      flash[:error] = 'Something went wrong, please try it again!'
+    end
+    redirect_to "/users/#{@user.id}/posts"
   end
 
   private

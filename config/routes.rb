@@ -6,6 +6,12 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
+  get '/users/:user_id/posts/:post_id/destroy_comment', to: 'comments#destroy', as: 'destroy_comment' # destroy
+  post '/users/:user_id/posts/:post_id/destroy_comment', to: 'comments#destroy' # destroy
+
+  get '/users/:user_id/posts/:post_id/destroy_post', to: 'posts#destroy', as: 'destroy_post' # destroy
+  post '/users/:user_id/posts/:post_id/destroy_post', to: 'posts#destroy' # destroy
+
   resources :users, only: [:index, :show] do
     resources :posts, only: [:index, :new, :create, :show] do
       resources :comments, only: [:new, :create]

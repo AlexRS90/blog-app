@@ -15,6 +15,9 @@ gem 'pg', '~> 1.1'
 # Use for authenticate users
 gem 'devise'
 
+# Use for authoziation
+gem 'cancancan'
+
 # Use bullet to solve n+1 issue
 gem 'bullet'
 
