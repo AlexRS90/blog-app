@@ -28,6 +28,16 @@ class PostsController < ApplicationController
     end
   end
   
+  def destroy
+    @user = User.find(params[:user_id])
+    @post = Post.find_by_id(params[:post_id])
+    if @post.destroy
+      flash[:success] = 'Post deleted successfully!'
+    else
+      flash[:error] = 'Something went wrong, please try it again!'
+    end
+    redirect_to "/users/#{@user.id}/posts"
+  end
 
   private
 

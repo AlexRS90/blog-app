@@ -5,6 +5,9 @@
   </div>
   <div><h2><%= @post.text %></h2></div>
 </div>
+<% if can? :destroy, @post %>
+  <%= link_to 'Delete Post', destroy_post_path(@user.id, @post.id) %>
+<% end %>
 <ul class="full-comments-wrapper">
   <% if @post.comments.empty?%>
     <h3>No comments yet</h3>
@@ -18,9 +21,6 @@
     <h2>Comments:</h2>
     <% @post.comments.each do |comment| %>
       <h4><%= comment.user.name %>: <%= comment.text %></h4>
-      <% if can? :destroy, comment %>
-        <%= link_to 'Delete', destroy_comment_path(@user.id, @post.id, comment.id) %>
-      <% end %>
     <% end %>
     </li>
   <% end %>
