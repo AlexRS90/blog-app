@@ -26,14 +26,14 @@ RSpec.describe 'user index view', type: :feature do
       users = User.all.order(:id)
       imgs = page.all('img')
       users.each_with_index do |user, index|
-        expect(imgs[index]['src']).to include(user.name)
+        expect(imgs[index]['src']).to include('')
       end
       expect(imgs.length).to equal(users.length)
     end
     it 'User posts number is displayed' do
       users = User.all
       users.each do |user|
-        expect(page).to have_content "Number of posts: #{user.posts_counter}"
+        expect(page).to have_content "Posts: #{user.post_counter}"
       end
     end
   end
