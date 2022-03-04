@@ -25,7 +25,7 @@ RSpec.describe 'user index view', type: :feature do
     it 'All user photos are displayed' do
       users = User.all.order(:id)
       imgs = page.all('img')
-      users.each_with_index do |user, index|
+      users.each_with_index do |_user, index|
         expect(imgs[index]['src']).to include('')
       end
       expect(imgs.length).to equal(users.length)
@@ -39,8 +39,7 @@ RSpec.describe 'user index view', type: :feature do
   end
   context 'User interacton of profile' do
     it "Redirected to user's show page" do
-      user_1 = User.first
-      expect(page).to have_content "Profile"
+      expect(page).to have_content 'Profile'
       click_link('Profile', match: :first)
       expect(page).to have_content "I'm the last oracle"
     end

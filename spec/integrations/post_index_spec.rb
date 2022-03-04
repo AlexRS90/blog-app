@@ -7,7 +7,7 @@ RSpec.describe 'Post index view', type: :feature do
     @users = create_users
     @posts = create_posts(@users)
     @likes, @comments = create_likes_comments(@users, @posts)
-    visit new_user_session_path  
+    visit new_user_session_path
     within('form') do
       fill_in 'user_email', with: 'foo1@foo.com'
       fill_in 'user_password', with: 'admin123'
@@ -40,11 +40,13 @@ RSpec.describe 'Post index view', type: :feature do
 
     it 'I can see some of the post\'s body' do
       post = Post.all.where(user_id: 1)
-        post.each do |t|
-          expect(page).to have_content t.title
+      post.each do |t|
+        expect(page).to have_content t.title
       end
     end
+  end
 
+  context 'Display comments, likes and pagination' do
     it 'I can see some comments on a post' do
       expect(page).to have_link('Delete', count: 5)
     end

@@ -1,5 +1,5 @@
 require 'rails_helper'
-RSpec.feature "Users", type: :feature do
+RSpec.feature 'Users', type: :feature do
   context 'Log in' do
     scenario 'Should have title' do
       visit new_user_session_path

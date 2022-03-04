@@ -6,7 +6,7 @@ RSpec.describe 'user show view', type: :feature do
   before :each do
     @users = create_users
     @posts = create_posts(@users)
-    visit new_user_session_path  
+    visit new_user_session_path
     within('form') do
       fill_in 'user_email', with: 'foo1@foo.com'
       fill_in 'user_password', with: 'admin123'
