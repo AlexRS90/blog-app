@@ -1,7 +1,7 @@
 require 'rails_helper'
 require './spec/integrations/registration_mocks'
 
-RSpec.describe 'user show view', type: :feature do
+RSpec.describe 'Post index view', type: :feature do
   include Mocks
   before :each do
     @users = create_users
