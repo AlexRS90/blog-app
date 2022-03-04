@@ -4,6 +4,7 @@
       <h3>Post No: <%= post.id %></h3>
       <h3><%= post.title %></h3>
       <h4>Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %></h4>
+      <%= link_to 'Read post', user_post_path(@users.id, post.id) %>
     </li>
   <% end %>
 </ul>

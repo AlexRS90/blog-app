@@ -274,7 +274,7 @@ DEPENDENCIES
   bootsnap
   bullet
   cancancan
-  capybara
+  capybara (>= 3.26)
   debug
   devise
   importmap-rails
