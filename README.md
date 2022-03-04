@@ -44,14 +44,14 @@
 ✅  Used methods from models. 📈  <br>
 ✅  Used partials to keep the code DRY 🏜️  <br>
 
-Milestone 6:
+## Milestone 6:
 
 ✅  Create forms to perform the following functions: <br>
       ✔️  Creates a Post on behalf of the current_user. 📄 <br>
       ✔️  Create a comment on behalf of the current_user. ✍️ <br>
 ✅  Allow Users to add likes to Posts. 👍 
 
-## Milestone 6:
+## Milestone 7:
 
 ✅ Added the following validations:<br>
    ✔️ For the User model:<br>
@@ -66,16 +66,25 @@ Milestone 6:
 ✅ Added flash messages in the create actions in all your controllers.<br>
 ✅ Solved issue N+1 using Bullet gem<br>
 
-## Milestone 7:
+## Milestone 8:
 
-✅  Added some styling to improve the UI 🎨 
-✅  Installed devise gem 💎 
-✅  User is able to:
-✅  Can register a new user. 🧑‍💻 
-✅  User logs in with a combination of email and password. 🔑  📫 
-✅  Hashed passwords should be stored in the database. 🗝️ 
-✅  Ask for confirmation of email. 📩 
-✅  Can reset password. 🔑  ▶️ 🗝️ 
+✅  Added some styling to improve the UI 🎨 <br>
+✅  Installed devise gem 💎 <br>
+✅  User is able to:<br>
+✅  Can register a new user. 🧑‍💻 <br>
+✅  User logs in with a combination of email and password. 🔑  📫 <br>
+✅  Hashed passwords should be stored in the database. 🗝️ <br>
+✅  Ask for confirmation of email. 📩 <br>
+✅  Can reset password. 🔑  ▶️ 🗝️ <br>
+
+## Milestone 9:
+
+For this PR I tested some functionalities of the app using RSpec and Capybara.<br>
+✅ Login page 👨‍💻<br>
+✅ User index page 📄<br>
+✅ User show page 💻<br>
+✅ User post index page ✍️ ⌨️<br>
+✅ Post-show page 🖥️ 📃<br>
 
 ## Built With
 
@@ -102,6 +111,12 @@ Enjoy!
  - <code>User.create!(name: 'Alex', photo: 'https://lh3.google.com/u/0/d/1Rf6vRehHE5NqXss9gvR8Xh2KCCKcZR3n=w1440-h789', bio: 'Full-Stack Web Developer', post_counter: 0)</code> <br>
  - <code>User.create(name: 'Tom', photo: 'https://media.istockphoto.com/photos/young-handsome-man-with-beard-wearing-casual-sweater-standing-over-picture-id1212702108?k=20&m=1212702108&s=612x612&w=0&h=ZI4gKJi2d1dfi74yTljf4YhulA1nfhD3dcUFGH-NUkY=', bio: 'Teacher from Mexico.', post_counter: 0)</code> <br>
  - <code>User.create(name: 'Lilly', photo: 'https://media.istockphoto.com/photos/cute-and-happy-teen-girl-with-braces-smiling-to-camera-picture-id1299140003?k=20&m=1299140003&s=612x612&w=0&h=c9d6mpWwHv1pgYg1vhSHlnA4GGUoS982oyrcdtHmrtI=', bio: 'Teacher from Poland.', post_counter: 0)</code> <br>
+
+### Testing
+
+To run the unit test once you did the above steps just write the following command in your terminal, you must be on your root directory:
+
+- <code>rspec spec</code>
 
 ### Prerequisites
 
