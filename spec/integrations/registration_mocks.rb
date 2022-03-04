@@ -34,5 +34,6 @@ module Mocks
                        text: "I'm #{users[j].name} and I'm commenting gibberish here.")
       end
     end
+    [Like.all, Comment.all]
   end
 end
